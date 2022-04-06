@@ -39,3 +39,17 @@
 ​	Despues de obtener la cantidad de casillas conectadas pertenecientes a cada jugador, se define entonces la función heurística como la diferencia entre las casillas conectadas por ambos jugadores (como dicho valor puede tener un valor absoluto mayor que 1, se normaliza dividiendo enter el máximo de ambas cantidades).
 
 ​ Con dicha heurística se establece una función que permite valorar un estado dado del tablero en cada hoja del árbol de desición para posteriormente establecer un valor más exacto que el minimax para cada nodo de dicho árbol.
+
+### Ejecución
+
+Para correr el algoritmo, basta con ejecutar el archivo `tourney.py` con:
+Windows:
+```
+py tourney.py
+```
+o
+Linux:
+```
+python3 tourney.py
+```
+Se iniciará una simulación de un todo contra todos y una vez terminado se dará un ranking con el total de victorias para cada algoritmo utilizado en el jugador artificial
