@@ -1,5 +1,5 @@
 - José Carlos Hernández Piñera
-- Miguel Asin 
+- Miguel Alejandro Asin Barthelemy
 
 ### Problema.
 
@@ -34,6 +34,8 @@
 
 ### Heurística
 
-​	Una idea inicial para afrontar el problema de construir la heurística consiste en contar la cantidad de piezas de un mismo jugador que están conectadas; para ello se guarda al inicio, en una cola, todas las casillas ocupadas por el jugador, luego para cada una, se buscan los vecinos que también sean ocupadas por el jugador. 
+​ Una idea inicial para afrontar el problema de construir la heurística consiste en contar la cantidad de piezas de un mismo jugador que están conectadas; para ello se almacena en un `set` las casillas ocupadas por el jugador, luego para cada una, se buscan los vecinos que también sean ocupadas por el jugador.
 
-​	Para la selección de los vecinos se utiliza el color del jugador.
+​	Despues de obtener la cantidad de casillas conectadas pertenecientes a cada jugador, se define entonces la función heurística como la diferencia entre las casillas conectadas por ambos jugadores (como dicho valor puede tener un valor absoluto mayor que 1, se normaliza dividiendo enter el máximo de ambas cantidades).
+
+​ Con dicha heurística se establece una función que permite valorar un estado dado del tablero en cada hoja del árbol de desición para posteriormente establecer un valor más exacto que el minimax para cada nodo de dicho árbol.
