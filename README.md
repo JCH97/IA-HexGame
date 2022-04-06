@@ -42,7 +42,7 @@
 
 ### Ejecución
 
-Para correr el algoritmo, basta con ejecutar el archivo `tourney.py` con:
+Para correr el algoritmo, basta con ejecutar el archivo `tourney.py` con:</br>
 Windows:
 ```
 py tourney.py
